@@ -292,7 +292,7 @@ bool Video_Init(int screen_magnification, VideoScaleFilter filter)
 	}
 
 	if (IniFile_GetInteger("fullscreen", 0) != 0) {
-		window_flags |= SDL_WINDOW_FULLSCREEN;
+		window_flags |= SDL_WINDOW_FULLSCREEN_DESKTOP;
 		s_full_screen = true;
 	}
 
